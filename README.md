@@ -1,4 +1,5 @@
 # Ham Radio Technician Quiz
+# Written with Claude Support
 
 A small desktop app, written in Lazarus/Free Pascal, for practising the FCC
 **Technician Class (Element 2)** amateur radio exam. It asks one
