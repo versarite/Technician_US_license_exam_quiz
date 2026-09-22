@@ -1,0 +1,163 @@
+object Form1: TForm1
+  Left = 387
+  Height = 750
+  Top = 187
+  Width = 900
+  Caption = 'Amateur Radio License Quiz'
+  ClientHeight = 750
+  ClientWidth = 900
+  DesignTimePPI = 120
+  Position = poScreenCenter
+  LCLVersion = '4.6.0.0'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  object lblCategory: TLabel
+    Left = 20
+    Height = 20
+    Top = 22
+    Width = 63
+    Caption = 'Category:'
+  end
+  object cmbCategory: TComboBox
+    Left = 100
+    Height = 28
+    Top = 18
+    Width = 425
+    ItemHeight = 20
+    Style = csDropDownList
+    TabOrder = 0
+    OnChange = cmbCategoryChange
+  end
+  object lblScore: TLabel
+    Left = 801
+    Height = 20
+    Top = 22
+    Width = 79
+    Alignment = taRightJustify
+    Anchors = [akTop, akRight]
+    Caption = 'Score: 0 / 0'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblProgress: TLabel
+    Left = 20
+    Height = 20
+    Top = 70
+    Width = 126
+    Caption = 'Question 1 of 409'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblQID: TLabel
+    Left = 20
+    Height = 20
+    Top = 102
+    Width = 47
+    Caption = 'T5A05'
+    Font.Color = clNavy
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblQuestion: TLabel
+    Left = 20
+    Height = 112
+    Top = 132
+    Width = 862
+    AutoSize = False
+    Caption = 'Question text goes here.'
+    Font.Height = -19
+    ParentFont = False
+    WordWrap = True
+  end
+  object rgChoices: TRadioGroup
+    Left = 20
+    Height = 238
+    Top = 255
+    Width = 862
+    AutoFill = True
+    Caption = ' Click an answer to check it '
+    ChildSizing.LeftRightSpacing = 12
+    ChildSizing.TopBottomSpacing = 8
+    ChildSizing.VerticalSpacing = 10
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 208
+    ClientWidth = 858
+    Font.Height = -18
+    Items.Strings = (
+      'A.  Placeholder'
+      'B.  Placeholder'
+      'C.  Placeholder'
+      'D.  Placeholder'
+    )
+    ParentFont = False
+    TabOrder = 1
+    OnClick = rgChoicesClick
+  end
+  object lblResult: TLabel
+    Left = 20
+    Height = 112
+    Top = 505
+    Width = 862
+    AutoSize = False
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
+  object btnNext: TButton
+    Left = 20
+    Height = 42
+    Top = 630
+    Width = 188
+    Caption = 'Next Question'
+    Enabled = False
+    TabOrder = 2
+    OnClick = btnNextClick
+  end
+  object btnRestart: TButton
+    Left = 220
+    Height = 42
+    Top = 630
+    Width = 212
+    Caption = 'Restart / Reshuffle'
+    TabOrder = 3
+    OnClick = btnRestartClick
+  end
+  object lblFooter: TLabel
+    Left = 20
+    Height = 1
+    Top = 700
+    Width = 1
+    Font.Color = clGray
+    ParentFont = False
+  end
+  object lblPct: TLabel
+    Left = 805
+    Height = 20
+    Top = 56
+    Width = 9
+    Caption = '0'
+    Font.CharSet = ANSI_CHARSET
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblpct_unit: TLabel
+    Left = 848
+    Height = 20
+    Top = 56
+    Width = 13
+    Caption = '%'
+    Font.CharSet = ANSI_CHARSET
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end

@@ -1,0 +1,22 @@
+object FormFigure: TFormFigure
+  Left = 0
+  Height = 400
+  Top = 0
+  Width = 600
+  Caption = 'Figure'
+  ClientHeight = 400
+  ClientWidth = 600
+  OnClose = FormClose
+  Position = poDesigned
+  LCLVersion = '2.2.6.0'
+  object imgPopup: TImage
+    Left = 0
+    Height = 400
+    Top = 0
+    Width = 600
+    Align = alClient
+    Center = True
+    Proportional = True
+    Stretch = True
+  end
+end

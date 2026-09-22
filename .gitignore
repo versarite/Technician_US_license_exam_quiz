@@ -1,0 +1,27 @@
+# Lazarus / Free Pascal build output
+lib/
+backup/
+*.o
+*.obj
+*.ppu
+*.compiled
+*.res
+*.or
+*.rst
+*.rsj
+*.a
+*.dbg
+*.exe
+*.dll
+
+# Per-user IDE session state
+*.lps
+
+# Compiled binary on Linux/macOS
+/hamquiz
+/hamquiz.app/
+
+# OS clutter
+Thumbs.db
+Desktop.ini
+.DS_Store

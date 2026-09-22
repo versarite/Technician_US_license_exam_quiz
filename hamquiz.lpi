@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="Amateur Radio Technician License Quiz"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="hamquiz.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="umain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMain"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ufigure.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormFigure"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFigure"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="hamquiz"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="."/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <VerifyObjMethodCallValidity Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+        <UseHeaptrc Value="True"/>
+        <TrashVariables Value="True"/>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+    </Linking>
+  </CompilerOptions>
+</CONFIG>
